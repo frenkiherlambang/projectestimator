@@ -10,6 +10,7 @@
     'resources/js/app.js',
     'resources/css/app.css',
     ])
+    @livewireStyles()
 </head>
 
 
@@ -119,6 +120,12 @@
                             Learn More
                         </a>
                     </div>
+
+                    @livewire('estimator-component')
+
+
+
+
                 </div>
             </div>
         </section>
@@ -127,7 +134,7 @@
 
         </div>
     </main>
-
+    @livewireScripts()
 </body>
 
 </html>

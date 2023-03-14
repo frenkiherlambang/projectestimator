@@ -20,5 +20,5 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Artisan::command('testshot', function () {
-    Browsershot::url('https://www.google.com')->setChromePath("/usr/local/bin")->save('google.png');
+    Browsershot::url('http://127.0.0.1:8000/')->setRemoteInstance('127.0.0.1/wd/hub', 4444)->noSandbox()->save(storage_path('app/public/test.png'));
 })->purpose('Display an inspiring quote');
