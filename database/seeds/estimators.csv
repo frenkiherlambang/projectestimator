@@ -1,16 +1,16 @@
 no,question,is_special_case,answer_type,pilihan,harga,next_question_id
 1,siapa saja sasaran pengguna aplikasi anda?,0,text,,0,
 2,apa tujuan utama dari aplikasi anda?,0,text,,0,
-3,apakah aplikasi anda membutuhkan koneksi internet?,0,boolean,ya,500_000,
+3,apakah aplikasi anda membutuhkan koneksi internet?,0,boolean,ya,500000,
 3,apakah aplikasi anda membutuhkan koneksi internet?,0,boolean,tidak,0,
-4,apakah aplikasi anda membutuhkan fitur registrasi dan login?,0,boolean,ya,500_000,
+4,apakah aplikasi anda membutuhkan fitur registrasi dan login?,0,boolean,ya,500000,
 4,apakah aplikasi anda membutuhkan fitur registrasi dan login?,0,boolean,tidak,0,
-5,di perangkat apa saja aplikasi anda dapat dijalankan?,0,multiple,android,2_000_000,6
-5,di perangkat apa saja aplikasi anda dapat dijalankan?,0,multiple,ios,5_000_000,7
-5,di perangkat apa saja aplikasi anda dapat dijalankan?,0,multiple,web,3_500_000,
-6,apakah aplikasi anda perlu terdaftar di playstore?,1,boolean,ya,500_000,
+5,di perangkat apa saja aplikasi anda dapat dijalankan?,0,multiple,android,2000000,6
+5,di perangkat apa saja aplikasi anda dapat dijalankan?,0,multiple,ios,5000000,7
+5,di perangkat apa saja aplikasi anda dapat dijalankan?,0,multiple,web,3500000,
+6,apakah aplikasi anda perlu terdaftar di playstore?,1,boolean,ya,500000,
 6,apakah aplikasi anda perlu terdaftar di playstore?,1,boolean,tidak,0,
-7,apakah aplikasi anda perlu terdaftar di app store?,1,boolean,ya,2_000_000,
+7,apakah aplikasi anda perlu terdaftar di app store?,1,boolean,ya,2000000,
 7,apakah aplikasi anda perlu terdaftar di app store?,1,boolean,tidak,0,
 8,media apa saja yang mungkin ada dalam aplikasi anda?,0,multiple,teks,0,9
 8,media apa saja yang mungkin ada dalam aplikasi anda?,0,multiple,video,0,10
@@ -30,10 +30,10 @@ no,question,is_special_case,answer_type,pilihan,harga,next_question_id
 13,apakah media gambar perlu diproduksi oleh tim kami?,1,boolean,"tidak, sudah ada / sudah saya siapkan",0,
 14,apakah media animasi interaktif perlu diproduksi oleh tim kami?,1,boolean,ya perlu,0,20
 14,apakah media animasi interaktif perlu diproduksi oleh tim kami?,1,boolean,"tidak, sudah ada / sudah saya siapkan",0,
-15,"berapa halaman naskah teks yang diperlukan (dengan ukuran a4, font 12pt)?",1,integer,,200_000,
-16,berapa menit total durasi video yang diperlukan dalam aplikasi?,1,integer,,1_000_000,
-17,berapa menit total durasi animasi yang diperlukan dalam aplikasi?,1,integer,,1_000_000,
-18,berapa menit total audio yang diperlukan dalam aplikasi?,1,integer,,500_000,
-19,berapa total gambar yang diperlukan dalam aplikasi?,1,integer,,200_000,
-20,berapa total animasi interaktif yang diperlukan dalam aplikasi?,1,integer,,1_500_000,
-,berapa total halaman yang diperlukan dalam aplikasi?,0,integer,,300_000,
+15,"berapa halaman naskah teks yang diperlukan (dengan ukuran a4, font 12pt)?",1,integer,,200000,
+16,berapa menit total durasi video yang diperlukan dalam aplikasi?,1,integer,,1000000,
+17,berapa menit total durasi animasi yang diperlukan dalam aplikasi?,1,integer,,1000000,
+18,berapa menit total audio yang diperlukan dalam aplikasi?,1,integer,,500000,
+19,berapa total gambar yang diperlukan dalam aplikasi?,1,integer,,200000,
+20,berapa total animasi interaktif yang diperlukan dalam aplikasi?,1,integer,,1500000,
+,berapa total halaman yang diperlukan dalam aplikasi?,0,integer,,300000,

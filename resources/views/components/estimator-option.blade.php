@@ -2,12 +2,12 @@
     @switch($option->estimator->answer_type)
     @case('text')
     {{-- input text --}}
-    <input type="text" name="option" id="option-{{$option->id }}"
+    <input type="text" name="option" id="option-{{$option->id }}" wire:model='answers.{{$option->estimator->id }}'  wire:key='{{$option->id }}'
         class="block w-full px-4 py-2 mt-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
-        placeholder="Enter your answer" />
+        placeholder="Enter your answers" />
     @break
     @case('boolean')
-    <input type="radio" name="option" value="DeliveryStandard" id="option-{{$option->id }}"
+    <input type="radio" name="option" value="{{$option->option}}" id="option-{{$option->id }}"  wire:model='answers.{{$option->estimator->id }}'  wire:key='{{$option->id }}'
         class="peer hidden [&:checked_+_label_svg]:block" />
 
     <label for="option-{{$option->id }}"
@@ -26,7 +26,7 @@
     @break
     @case('multiple')
     {{-- checkbox with label --}}
-    <input type="checkbox" name="option" value="DeliveryStandard" id="option-{{$option->id }}"
+    <input type="checkbox" name="option" value="{{$option->option }}" id="option-{{$option->id }}"  wire:model='answers.{{$option->estimator->id}}.{{$option->id}}'  wire:key='{{$option->id }}'
         class="peer hidden [&:checked_+_label_svg]:block" />
     <label for="option-{{$option->id }}"
         class="flex items-center justify-between p-4 text-sm font-medium border border-gray-100 rounded-lg shadow-sm cursor-pointer hover:border-gray-200 peer-checked:border-blue-500 peer-checked:ring-1 peer-checked:ring-blue-500">
@@ -41,6 +41,12 @@
             <p class="text-gray-700">{{$option->option }}</p>
         </div>
     </label>
+    @break
+    @case('integer')
+    {{-- input number --}}
+    <input type="number" min="1" name="option" id="option-{{$option->id }}" wire:model='answers.{{$option->estimator->id }}'  wire:key='{{$option->id }}'
+        class="block w-full px-4 py-2 mt-2 text-gray-700 border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
+        placeholder="Enter your answers" />
     @break
     @default
 
