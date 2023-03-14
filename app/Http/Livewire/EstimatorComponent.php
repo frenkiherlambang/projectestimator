@@ -47,7 +47,7 @@ class EstimatorComponent extends Component
             } else {
                 $estimator = Estimator::find($key);
                 if ($estimator->answer_type == 'integer') {
-                    $harga = $answer * $estimator->options()->first()->value;
+                    $harga = intval($answer) * $estimator->options()->first()->value;
                     if ($harga > 0) {
                         $this->questionsAnswers[$key] = [
                             'question' => $estimator->question,
